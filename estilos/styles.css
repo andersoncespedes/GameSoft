@@ -11,6 +11,15 @@ header {
 
     align-self: flex-start;
 }
+.showcase-title{
+    background-color: red;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
 .list-title{
     padding: 10px;
     width: 100%;
@@ -54,6 +63,7 @@ main{
     width: 70%;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 .img-container img{
     width: 100%;
@@ -66,10 +76,10 @@ main{
 
 }
 .card-z{
-    width: 32%;
+    width: 31%;
     margin: 10px;
     min-height: 300px;
-    
+    cursor: pointer;
     border-radius: 10px;
 }
 header nav ul li{
@@ -98,6 +108,16 @@ footer{
 @media screen and (max-width:1000px){
     header nav ul li a{
         font-size: 14px;
+    }
+    .showcase-container{
+        flex-wrap: wrap;
+    }
+    
+    .card-z{
+        width: 100%;
+    }
+    .showcase .showcase-principal, .showcase .showcase-side{
+        width: 100%;
     }
 }
 @keyframes mov{
